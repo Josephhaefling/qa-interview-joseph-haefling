@@ -1,5 +1,5 @@
 
-Feature: An Example Feature
+Feature: Test myRapName.com
 
   Scenario: An example scenario
     Given   I am on the homepage
@@ -28,7 +28,7 @@ Feature: An Example Feature
 
     When    I click request a "male" rap name
 
-    Then    It should request a male rap name
+    Then    It should have one rap name
 
     When    I input a new name firstname
 
@@ -46,9 +46,9 @@ Feature: An Example Feature
 
     When    I click request a "female" rap name
 
-    Then    It should have a female rap name
+    Then    It should have two rap names
 
     When    I click request a "female" rap name
 
-    Then    It should have two female rap names
+    Then    It should have "3" rap names
 

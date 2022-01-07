@@ -47,14 +47,9 @@ Then(/^It should have no rap name$/) do
     assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 0)
 end 
 
-When(/^I click request a male rap name$/)do 
-  click_button('Male')
-end
-
-Then(/^It should request a male rap name/) do
+Then(/^It should have one rap name/) do
   assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 1)
 end
-
 
 When(/^I input a new name firstname$/) do
     fill_in('firstname', with: 'Abby')
@@ -84,11 +79,7 @@ Then(/^It should have no female rap name$/) do
     assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 1)
 end
 
-When(/^I click request a female rap name$/) do
-    click_button('Female')
-end
-
-Then(/^It should have a female rap name$/) do
+Then(/^It should have two rap names$/) do
     assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 2)
 end
 
@@ -100,7 +91,8 @@ When(/^I click request a "(.*?)" rap name$/) do | type |
   end
 end
 
-Then(/^It should have two female rap names$/) do
+# This could be refactored to be more reusable
+Then(/^It should have three rap names$/) do | type |
     assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 3)
 end
 
