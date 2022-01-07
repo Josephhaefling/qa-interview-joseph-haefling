@@ -1,25 +1,3 @@
-# QA Code Test
-
-### Setup
-1. Download and unzip file
-2. Rename your project "qa-interview-yourname"
-3. Make sure your Ruby environment is using `ruby 2.3.3`
-4. Be sure to bundle install
-5. Run the exampcdle feature file:
-    - `bundle exec cucumber features/example.feature`
-6. Create the tests below in order.  You should be able to create any tests by building on the
-   files that are already set up in the project.
-
-Homepage='http://www.myrapname.com/'
-
-### Tests
-Write an automated test to validate each of the following:
-1. The input fields exist
-2. A negative scenario using the input fields
-3. Input data into the fields
-4. Submit a name for male with a nickname and validate that a new name has been prepended to the list
-5. Submit twice for a female with a last initial and validate that a new name has been prepended to the list
-
 ## Aetna Challenge
 
 ### Contributors
@@ -37,7 +15,7 @@ Write an automated test to validate each of the following:
 
 1. Clone down this repository to your local machine by running
 ```
-$ git clone git@github.com:https://github.com/Josephhaefling/qa-interview-joseph-haefling
+$ git clone git@github.com: https://github.com/Josephhaefling/qa-interview-joseph-haefling.git
 ```
 
 2. cd into the project folder on the command line by running 
@@ -63,8 +41,9 @@ $ bundle exec cucumber features/example.feature
  - Capybara
  - Git
  
- ### Challenges
-I initially started trying to write this in ruby but had some trouble getting the environment set up properly. I didn't want to spend too much time on just the set up so I went ahead and implemented the challenge in JavaScript. Getting used to new syntax can be tricky, but I found Cucumber to be pretty easy in that regard. The hardest part was using xpath to target specific elements on the page that did not have names, id's, or classes. 
+### Challenges
+The biggest challenge that I ran into was setting up the ruby environment. I was unable to run the project with Ruby 2.3.3 but I was able to run it with 2.6.3. Using a new assertion library was a bit of a challenge as well but once I got a few tests running I got the hang of it. 
+ 
 
 ### Reflection
-I really enjoyed this challenge! Creating automated tests is really cool and I can see how it would be better then running integration tests on a virtual DOM. Thank you so much for the opportunity to complete this challenge. Wishing everyone at Aetna the happiest of holidays!
+I really loved this challenge! Working on a testing with Ruby was very different than what I am used to, but I enjoyed it. Creating automated tests with cucumber is great, it seems like a much better approach than running tests on a virtual DOM. Working on  Thank's for the opportunity to complete this challenge.
