@@ -20,7 +20,7 @@ $ git clone git@github.com: https://github.com/Josephhaefling/qa-interview-josep
 
 2. cd into the project folder on the command line by running 
 ```
-$ cd qa-interview-BillWilke
+$ cd qa-interview-joseph-haefling
 ```
 
 3. To install the necessary packages, in your command line run: 
@@ -30,7 +30,7 @@ $ bundle install
 
 4. To run the test, in your command line run:
 ```
-$ bundle exec cucumber features/example.feature
+$  bundle exec cucumber features/my_rap_name.feature
 ```
 
 ### Technologies Used

@@ -50,5 +50,5 @@ Feature: Test myRapName.com
 
     When    I click request a "female" rap name
 
-    Then    It should have "3" rap names
+    Then    It should have three rap names
 

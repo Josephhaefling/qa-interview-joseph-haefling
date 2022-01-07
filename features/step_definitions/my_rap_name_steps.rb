@@ -92,7 +92,7 @@ When(/^I click request a "(.*?)" rap name$/) do | type |
 end
 
 # This could be refactored to be more reusable
-Then(/^It should have three rap names$/) do | type |
+Then(/^It should have three rap names$/) do
     assert_selector(:xpath, './/html/body/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr', count: 3)
 end
 
